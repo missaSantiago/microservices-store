@@ -7,7 +7,7 @@ server:
         server:
           git:
             uri: https://github.com/missaSantiago/microservices-store.git
-            searchPath: config-data
+            searchPaths: config-data
             username: ${GIT_USER}
             password: ${GIT_PASSWORD}
 security:

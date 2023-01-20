@@ -2,14 +2,23 @@ server:
   port: 8081
 
   spring:
+    profiles:
+      active: composite
     cloud:
       config:
         server:
-          git:
-            uri: https://github.com/missaSantiago/microservices-store.git
-            searchPaths: config-data
-            username: ${GIT_USER}
-            password: ${GIT_PASSWORD}
+          composite:
+            - type: git
+              uri: https://github.com/missaSantiago/microservices-store.git
+              search-locations: config-data
+#              username: ${GIT_USER}
+#              password: ${GIT_PASSWORD}
+          bootstrap: true
+#          git:
+#            uri: https://github.com/missaSantiago/microservices-store.git
+#            searchPaths: config-data
+#            username: ${GIT_USER}
+#            password: ${GIT_PASSWORD}
 security:
   user:
     name: root

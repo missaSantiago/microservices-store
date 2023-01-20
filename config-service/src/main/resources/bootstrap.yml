@@ -10,7 +10,13 @@ server:
             searchPaths: config-data
             username: ${GIT_USER}
             password: ${GIT_PASSWORD}
+            default-label: main
+          boostrap: true
+        enabled: true
 security:
   user:
     name: root
     user: s3cr3t
+
+  application:
+    name: Config Service

@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+  spring:
+    profiles:
+      active: git
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/missaSantiago/microservices-store.git
+            default-label: main
+            username: ${GIT_USER}
+            password: ${GIT_PASSWORD}
+            search-paths:
+              - config-data
+          bootstrap: true
+        enabled: true
+    application:
+      name: Config-Service
+security:
+  user:
+    name: root
+    user: s3cr3t

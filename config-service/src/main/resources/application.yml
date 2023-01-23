@@ -7,13 +7,6 @@ server:
         server:
           git:
             uri: https://github.com/missaSantiago/microservices-store.git
-            username: ${GIT_USER}
-            password: ${GIT_PASSWORD}
-            searchPaths: config-data
-          default-label: main
-        enabled: true
-    application:
-      name: Config-Server
 
 security:
   user:

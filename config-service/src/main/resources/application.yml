@@ -7,8 +7,3 @@ server:
         server:
           git:
             uri: https://github.com/missaSantiago/microservices-store.git
-
-security:
-  user:
-    name: root
-    user: s3cr3t

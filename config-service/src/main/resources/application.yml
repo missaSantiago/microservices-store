@@ -10,10 +10,9 @@ server:
           git:
             uri: https://github.com/missaSantiago/microservices-store.git
             default-label: main
-            username: ${GIT_USER}
-            password: ${GIT_PASSWORD}
-            search-paths:
-              - config-data
+            username: missaSantiago
+            password: missa2270xd
+            searchPaths: config-data
           bootstrap: true
         enabled: true
     application:

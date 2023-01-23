@@ -3,7 +3,7 @@ server:
 
   spring:
     profiles:
-      active: git
+      active: native
     cloud:
       config:
         server:
@@ -17,7 +17,8 @@ server:
           bootstrap: true
         enabled: true
     application:
-      name: Config-Service
+      name: Config-Server
+
 security:
   user:
     name: root

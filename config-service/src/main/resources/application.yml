@@ -13,7 +13,6 @@ server:
             password: ${GIT_PASSWORD}
             searchPaths: config-data
           default-label: main
-          bootstrap: true
         enabled: true
     application:
       name: Config-Server

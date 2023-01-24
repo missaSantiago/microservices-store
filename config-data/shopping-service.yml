@@ -1,6 +1,6 @@
 #Application Configuration
 server:
-  port: 8080
+  port: 8084
 
 # To See H2 Console in Browser:
 # http://localhost:8080/h2-console
@@ -35,3 +35,7 @@ spring:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/

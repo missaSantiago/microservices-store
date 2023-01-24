@@ -1,6 +1,6 @@
 #Application Configuration
 server:
-  port: 8080
+  port: 8082
   error:
     include-message: always
     include-binding-errors: always
@@ -38,3 +38,7 @@ spring:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/

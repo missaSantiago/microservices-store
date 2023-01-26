@@ -18,7 +18,7 @@ spring:
           predicates:
             - Path=/api/customers/**
         - id: product-service
-          uri: lb://service-product
+          uri: lb://product-service
           predicates:
             - Path=/api/products/**
         - id: shopping-service

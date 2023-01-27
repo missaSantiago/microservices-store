@@ -3,6 +3,7 @@ package micro.proyect.shopping.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
+import micro.proyect.shopping.model.Product;
 
 @Entity
 @Data
@@ -22,6 +23,9 @@ public class InvoiceItem {
 
     @Transient
     private Double subtotal;
+
+    @Transient
+    private Product product;
 
     public Double getSubTotal() {
         if (this.price > 0 && this.quantity > 0) {

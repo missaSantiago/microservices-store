@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.Data;
+import micro.proyect.shopping.model.Customer;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -36,6 +37,9 @@ public class Invoice {
     private List<InvoiceItem> items;
 
     private String state;
+
+    @Transient
+    private Customer customer;
 
     public Invoice() {
         items = new ArrayList<>();
